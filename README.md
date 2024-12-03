@@ -1,1 +1,1 @@
-# dauphins_Bamako
+# dauphins-de-Bamako
