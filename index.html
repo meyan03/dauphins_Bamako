@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenue sur le site officiel de l'Association Sportive de Natation Les Dauphins de Bamako">
     <title>Dauphins de Bamako</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004aad;
+            padding: 1rem 2rem;
+            color: #fff;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            margin-bottom: 1rem;
+        }
+
+        .hero .featured-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #004aad;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero .btn:hover {
+            background-color: #003080;
+        }
+
+        .quick-links {
+            padding: 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .quick-links h2 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+
+        .quick-links .links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .quick-links .links a {
+            padding: 1rem 2rem;
+            background-color: #004aad;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .quick-links .links a:hover {
+            background-color: #003080;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #004aad;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -21,32 +141,34 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Bienvenue sur le site des Dauphins de Bamako !</h1>
-            <p>Le club de natation qui propulse vos talents sous l’eau.</p>
-            <p>L'association sportive les Dauphins de Bamako fondée le 30 Octobre 2024 s'engage à promouvoir la pratique de la natation ainsi que d'autres activités physiques, éducatives, culturelles et sociales au sein du club. </p>
-            <p>Pour encourager la passion de la natation au Mali, l’Association Sportive de Natation Les Dauphins de Bamako est un espace dédié à l’excellence sportive et à la solidarité et le travail d’équipe. </p> 
-            <p>Nous nous engageons à développer la natation pour tous, avec une attention particulière pour la participation féminine, et à représenter fièrement le Mali lors des compétitions nationales et internationales. </p>
-            <img src="images/piscineAZALAI.png" alt="Piscine Azalaï" class="featured-image">
-            <a href="programs.html" class="btn">Découvrir nos programmes</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Bienvenue sur le site des Dauphins de Bamako !</h1>
+                <p>Le club de natation qui propulse vos talents sous l’eau.</p>
+                <p>L'association sportive les Dauphins de Bamako fondée le 30 Octobre 2024 s'engage à promouvoir la pratique de la natation ainsi que d'autres activités physiques, éducatives, culturelles et sociales au sein du club. </p>
+                <p>Pour encourager la passion de la natation au Mali, l’Association Sportive de Natation Les Dauphins de Bamako est un espace dédié à l’excellence sportive et à la solidarité et le travail d’équipe. </p> 
+                <p>Nous nous engageons à développer la natation pour tous, avec une attention particulière pour la participation féminine, et à représenter fièrement le Mali lors des compétitions nationales et internationales. </p>
+                <img src="images/piscineAZALAI.png" alt="Piscine Azalaï" class="featured-image">
+                <a href="programs.html" class="btn">Découvrir nos programmes</a>
+            </div>
+        </section>
 
-    <section class="quick-links">
-        <h2>Explorez nos sections</h2>
-        <div class="links">
-            <a href="programs.html">Programmes</a>
-            <a href="contact.html">Inscriptions</a>
-            <a href="events.html">Événements</a>
-        </div>
-    </section>
+        <section class="quick-links">
+            <h2>Explorez nos sections</h2>
+            <div class="links">
+                <a href="programs.html">Programmes</a>
+                <a href="contact.html">Inscriptions</a>
+                <a href="events.html">Événements</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Les Dauphins de Bamako. Tous droits réservés.</p>
     </footer>
 </body>
+
 </html>
