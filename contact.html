@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Dauphins de Bamako</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004aad;
+            padding: 1rem 2rem;
+            color: #fff;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            padding: 2rem;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contact h1 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details {
+            margin-top: 2rem;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h2 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #004aad;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -22,25 +104,25 @@
         </nav>
     </header>
 
-    <section class="contact">
-        <h1>Contactez-nous</h1>
-        <p><strong>Rejoignez-nous !</strong> </p>
-        <p>Prenez votre avenir aquatique en main. Que vous soyez enfant, adolescent ou adulte, il n’est jamais trop tard pour devenir un Dauphin de Bamako. Inscrivez-vous dès aujourd'hui et plongez dans l'aventure !</p>
+    <main>
+        <section class="contact">
+            <h1>Contactez-nous</h1>
+            <p><strong>Rejoignez-nous !</strong></p>
+            <p>Prenez votre avenir aquatique en main. Que vous soyez enfant, adolescent ou adulte, il n’est jamais trop tard pour devenir un Dauphin de Bamako. Inscrivez-vous dès aujourd'hui et plongez dans l'aventure !</p>
 
-        <!-- Section des coordonnées -->
-        <div class="contact-details">
-            <h2>Nos coordonnées</h2>
-            <p><strong>Adresse :</strong> Quartier Korofina Nord, rue 122, porte 68, Bamako, Mali</p>
-            <p><strong>Téléphone :</strong> +223 73 87 29 11</p>
-            <p><strong>Email :</strong> contact@gmail.com</p>
-            <p>Suivez-nous aussi sur nos réseaux sociaux pour rester informé de nos dernières actualités et événements !</p>
-
-        </div>
-
-    </section>
+            <div class="contact-details">
+                <h2>Nos coordonnées</h2>
+                <p><strong>Adresse :</strong> Quartier Korofina Nord, rue 122, porte 68, Bamako, Mali</p>
+                <p><strong>Téléphone :</strong> +223 73 87 29 11</p>
+                <p><strong>Email :</strong> contact@gmail.com</p>
+                <p>Suivez-nous aussi sur nos réseaux sociaux pour rester informé de nos dernières actualités et événements !</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Les Dauphins de Bamako. Tous droits réservés.</p>
     </footer>
 </body>
+
 </html>

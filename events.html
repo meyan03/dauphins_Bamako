@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Événements - Dauphins de Bamako</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004aad;
+            padding: 1rem 2rem;
+            color: #fff;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .events {
+            padding: 2rem;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .events h1 {
+            color: #004aad;
+            margin-bottom: 1rem;
+        }
+
+        .event-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .event-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .event-item h3 {
+            color: #004aad;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #004aad;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -22,29 +107,32 @@
         </nav>
     </header>
 
-    <section class="events">
-        <h1>Nos Événements</h1>
-        <div class="event-list">
-            <div class="event-item">
-                <h3>Compétition nationale</h3>
-                <p>Date : 15 Décembre 2024</p>
-                <p>Lieu : Stade olympique de Bamako</p>
+    <main>
+        <section class="events">
+            <h1>Nos Événements</h1>
+            <div class="event-list">
+                <div class="event-item">
+                    <h3>Compétition nationale</h3>
+                    <p><strong>Date :</strong> 15 Décembre 2024</p>
+                    <p><strong>Lieu :</strong> Stade olympique de Bamako</p>
+                </div>
+                <div class="event-item">
+                    <h3>Journée portes ouvertes</h3>
+                    <p><strong>Date :</strong> 5 Janvier 2025</p>
+                    <p><strong>Lieu :</strong> Grand Hôtel</p>
+                </div>
+                <div class="event-item">
+                    <h3>Compétition internationale</h3>
+                    <p><strong>Date :</strong> 20 Février 2025</p>
+                    <p><strong>Lieu :</strong> Dakar, Sénégal</p>
+                </div>
             </div>
-            <div class="event-item">
-                <h3>Journée portes ouvertes</h3>
-                <p>Date : 5 Janvier 2025</p>
-                <p>Lieu : Grand Hôtel</p>
-            </div>
-            <div class="event-item">
-                <h3>Compétition internationale</h3>
-                <p>Date : 20 Février 2025</p>
-                <p>Lieu : Dakar, Sénégal</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Les Dauphins de Bamako. Tous droits réservés.</p>
     </footer>
 </body>
+
 </html>
